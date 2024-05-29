@@ -3,82 +3,54 @@
 
 package Easy;
 
+import java.util.ArrayDeque;
+
 public class ValidParentheses {
     public boolean isValid(String s) {
-        boolean search1 = false;
-        boolean search2 = false;
-        boolean search3 = false;
-        boolean result = false;
-        boolean result1 = false;
-        char[] arrchS = s.toCharArray();
-
-        if (arrchS.length % 2 != 0) {
-            return result;
+        if (s.isEmpty()) {
+            return false;
+        }
+        if (s.isBlank() || s.length() < 2) {
+            return false;
         }
 
-        String poli = "";
-        for (int i = (s.length()-1); i >= 0; i--){
-            poli = poli + s.charAt(i);
+        char[] openedBrackets = new char[]{'(', '{', '['};
+        char[] closedBrackets = new char[]{')', '}', ']'};
+        if (s.charAt(0) == closedBrackets[0]
+                || s.charAt(0) == closedBrackets[1]
+                || s.charAt(0) == closedBrackets[2]) {
+            return false;
         }
-        char[] arrPoli = poli.toCharArray();
+        char[] inputArray = s.toCharArray();
+        ArrayDeque<Character> stack = new ArrayDeque<>();
 
-        if ((arrchS[0] == '(')) {
-            if (arrPoli[0] == ')') {
-                result1 = true;
-
-            } else {
-                result1 = false;
-
-            }
-        } if ((arrchS[0] == '[')) {
-            if (arrPoli[0] == ']') {
-                result1 = true;
-
-            } else {
-                result1 = false;
-
+        for (char bracket : inputArray) {
+            if (bracket == openedBrackets[0]
+                    || bracket == openedBrackets[1]
+                    || bracket == openedBrackets[2]) {
+                stack.push(bracket);
             }
 
-        } if ((arrchS[0] == '{')) {
-            if (arrPoli[0] == '}') {
-                result1 = true;
-            } else {
-                result1 = false;
-            }
-        }
-
-        for (int i = 0; i < arrchS.length; i++){
-            if ('(' == arrchS[i]) {
-                for (int j = 0; j < arrchS.length; j++){
-                    if (')' == arrchS[j]){
-                        search1 = true;
-                    }
-                }
-            }
-            if ('[' == arrchS[i]) {
-
-                for (int j = 0; j < arrchS.length; j++){
-                    if (']' == arrchS[j]){
-                        search2 = true;
-                    }
+            if (bracket == closedBrackets[0]
+                    || bracket == closedBrackets[1]
+                    || bracket == closedBrackets[2]) {
+                if (stack.isEmpty()) {
+                    return false;
                 }
 
-            }
-            if ('{' == arrchS[i]) {
+                char stackBracket = stack.pop();
 
-                for (int j = 0; j < arrchS.length; j++){
-                    if ('}' == arrchS[j]){
-                        search3 = true;
-                    }
+                if (bracket == closedBrackets[0] && stackBracket != openedBrackets[0]) {
+                    return false;
+                }
+                if (bracket == closedBrackets[1] && stackBracket != openedBrackets[1]) {
+                    return false;
+                }
+                if (bracket == closedBrackets[2] && stackBracket != openedBrackets[2]) {
+                    return false;
                 }
             }
-
         }
-        result = search1 | search2 | search3;
-
-        boolean genResult = result & result1;
-
-        return genResult;
+        return stack.isEmpty();
     }
 }
-
