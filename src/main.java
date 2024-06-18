@@ -5,8 +5,14 @@ import Easy.*;
 
 public class main {
     public static void main(String[] args) {
+        int n = 19;
+        HappyNumber hn = new HappyNumber();
+        System.out.println(hn.isHappy(n));
 
-        ListNode head1 = new ListNode(1);
+
+
+
+/*        ListNode head1 = new ListNode(1);
         ListNode list12 = new ListNode(2);
         ListNode list13 = new ListNode(4);
         head1.next = list12;
@@ -25,7 +31,7 @@ public class main {
         while (node != null) {
             System.out.println(node.val);
             node = node.next;
-        }
+        }*/
 
 
 
