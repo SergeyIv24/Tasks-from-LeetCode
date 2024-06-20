@@ -3,7 +3,31 @@
 package Easy;
 
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+
 public class TwoSum {
+
+    public int[] twoSum1(int[] nums, int target) {
+
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            map.put(nums[i], i);
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+            int secondNumber = target - nums[i];
+            if (map.containsKey(secondNumber) && i != map.get(secondNumber)) {
+                return new int[]{i, map.get(secondNumber)};
+            }
+        }
+        return new int[2];
+    }
+
+
+
     public int[] twoSum(int[] nums, int target) {
         int[] twoSum = new int[2];
         for (int i = 0; i < nums.length; i++){
@@ -18,7 +42,6 @@ public class TwoSum {
                         } else {
                             break;
                         }
-
                     }
                 } else {
                     break;
