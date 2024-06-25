@@ -5,6 +5,10 @@ import java.util.Arrays;
 
 public class main {
     public static void main(String[] args) {
+        int[] nums1 = {1,2,3,6};
+        int[] nums2 = {2,3,4,5};
+        MinimumCommonValue test = new MinimumCommonValue();
+        System.out.println(test.getCommon(nums1, nums2));
 
 
 
