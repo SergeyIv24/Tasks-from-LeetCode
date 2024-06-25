@@ -5,9 +5,13 @@ import java.util.Arrays;
 
 public class main {
     public static void main(String[] args) {
-        int[] nums = {3,2,4};
-        TwoSum ts = new TwoSum();
-        System.out.println(Arrays.toString(ts.twoSum1(nums, 6)));
+
+
+
+
+
+
+
 
 
 

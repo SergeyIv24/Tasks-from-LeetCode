@@ -4,14 +4,30 @@
 package Easy;
 
 public class SqrtX {
+
     public int mySqrt(int x) {
-        int x2=1;
-        if (x > 0){
-            double x1 = Math.sqrt(x);
-            x2 = (int) x1;
-        } else {
+        if (x == 0) {
             return 0;
         }
-        return x2;
+       if (x == 1) {
+            return 1;
+        }
+
+        int lowIdx = 1;
+        int highIdx = x - 1;
+
+        int middleIdx;
+        while (lowIdx <= highIdx) {
+            middleIdx = (lowIdx + highIdx) / 2;
+
+            if ((long) middleIdx * middleIdx == (long) x) {
+                return middleIdx;
+            } else if ((long) middleIdx * middleIdx > (long) x) {
+                highIdx = middleIdx - 1;
+            } else {
+                lowIdx = middleIdx + 1;
+            }
+        }
+        return highIdx;
     }
 }
