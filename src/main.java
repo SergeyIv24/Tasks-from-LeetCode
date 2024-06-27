@@ -5,8 +5,10 @@ import java.util.Arrays;
 
 public class main {
     public static void main(String[] args) {
-        PowerOfThree test = new PowerOfThree();
-        System.out.println(test.isPowerOfThree(45));
+        String[] names = {"Mary","John","Emma"};
+        int[] heights = {180,165,170};
+        SortThePeople test = new SortThePeople();
+        System.out.println(Arrays.toString(test.sortPeople(names, heights)));
 
 
 
