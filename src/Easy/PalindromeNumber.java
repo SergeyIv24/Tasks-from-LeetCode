@@ -1,5 +1,4 @@
 //https://leetcode.com/problems/palindrome-number/
-//Easy
 
 package Easy;
 

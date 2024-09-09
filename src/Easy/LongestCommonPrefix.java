@@ -1,3 +1,5 @@
+//https://leetcode.com/problems/longest-common-prefix/description/
+
 package Easy;
 
 public class LongestCommonPrefix {

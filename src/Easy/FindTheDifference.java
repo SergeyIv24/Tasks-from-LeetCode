@@ -1,8 +1,8 @@
+//https://leetcode.com/problems/find-the-difference/description/
+
 package Easy;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 public class FindTheDifference {
     public char findTheDifference(String s, String t) {
@@ -20,25 +20,5 @@ public class FindTheDifference {
             }
         }
         return ' ';
-
-
-
-/*        for (int i = 0; i < s.length(); i++) {
-            map.put(s.charAt(i), i);
-        }*/
-
-
-
-/*        Map<Integer, Character> map = new HashMap<>();
-        for (int i = 0; i < s.length(); i++) {
-            map.put(i, s.charAt(i));
-        }
-
-        for (int i = 0; i < t.length(); i++) {
-            if (!map.containsValue(t.charAt(i))) {
-                return t.charAt(i);
-            }
-        }
-        return ' ';*/
     }
 }

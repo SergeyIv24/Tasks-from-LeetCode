@@ -1,3 +1,5 @@
+//https://leetcode.com/problems/number-of-good-pairs/description/
+
 package Easy;
 
 import java.util.HashMap;

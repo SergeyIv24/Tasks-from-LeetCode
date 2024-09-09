@@ -1,3 +1,5 @@
+//https://leetcode.com/problems/happy-number/description/
+
 package Easy;
 
 public class HappyNumber {

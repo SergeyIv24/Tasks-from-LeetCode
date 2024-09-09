@@ -1,6 +1,6 @@
-package Easy;
+//https://leetcode.com/problems/remove-element/description/
 
-import java.util.Arrays;
+package Easy;
 
 public class RemoveElement {
     public int removeElement(int[] nums, int val) {

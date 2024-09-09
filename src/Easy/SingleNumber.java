@@ -1,5 +1,4 @@
 //https://leetcode.com/problems/single-number/description/
-//Easy
 
 package Easy;
 

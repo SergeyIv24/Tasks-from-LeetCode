@@ -1,3 +1,5 @@
+//https://leetcode.com/problems/power-of-three/description/
+
 package Easy;
 
 public class PowerOfThree {

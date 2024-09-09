@@ -1,3 +1,5 @@
+//https://leetcode.com/problems/minimum-common-value/description/
+
 package Easy;
 
 public class MinimumCommonValue {

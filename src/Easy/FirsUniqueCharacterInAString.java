@@ -1,3 +1,5 @@
+//https://leetcode.com/problems/first-unique-character-in-a-string/description/
+
 package Easy;
 
 import java.util.HashMap;

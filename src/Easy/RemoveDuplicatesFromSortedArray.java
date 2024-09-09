@@ -1,9 +1,6 @@
-package Easy;
+//https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
+package Easy;
 
 public class RemoveDuplicatesFromSortedArray {
     public int removeDuplicates(int[] nums) {

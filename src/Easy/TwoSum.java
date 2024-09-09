@@ -1,9 +1,7 @@
 //https://leetcode.com/problems/two-sum/description/
-//Easy
+
 package Easy;
 
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 

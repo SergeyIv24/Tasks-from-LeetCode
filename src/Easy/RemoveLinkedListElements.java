@@ -1,3 +1,6 @@
+//https://leetcode.com/problems/remove-linked-list-elements/description/
+//todo in progress
+
 package Easy;
 
 public class RemoveLinkedListElements {
@@ -14,8 +17,6 @@ public class RemoveLinkedListElements {
                 current = prev.next;
                 continue;
             }
-
-
             prev = current;
             current = current.next;
         }
@@ -39,9 +40,6 @@ public class RemoveLinkedListElements {
                 continue;
             }
 
-/*            if (current.next == null) {
-                return head;
-            }*/
 
             if ((current.next != null) && (current.next.val == val)) {
                 current.next = current.next.next;

@@ -1,3 +1,5 @@
+//https://leetcode.com/problems/power-of-two/description/
+
 package Easy;
 
 public class PowerOfTwo {

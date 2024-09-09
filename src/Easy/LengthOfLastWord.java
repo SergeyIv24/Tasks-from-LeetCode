@@ -1,5 +1,4 @@
 //https://leetcode.com/problems/length-of-last-word/description/
-//Easy
 
 package Easy;
 

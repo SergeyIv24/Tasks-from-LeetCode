@@ -1,3 +1,5 @@
+//https://leetcode.com/problems/majority-element/description/
+
 package Easy;
 
 import java.util.Arrays;

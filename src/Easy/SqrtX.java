@@ -1,5 +1,4 @@
 //https://leetcode.com/problems/sqrtx/
-//Easy
 
 package Easy;
 

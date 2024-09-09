@@ -1,5 +1,4 @@
 //https://leetcode.com/problems/plus-one/description/
-//Easy
 
 package Easy;
 
